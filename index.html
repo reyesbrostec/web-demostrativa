@@ -3,38 +3,116 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Arccio - Páginas web para instituciones educativas.">
-    <title>WEB-DEMOSTRATIVA | Arccio</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Web Demostrativa</title>
+    <link rel="icon" href="assets/logo.png" type="image/png">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
+    <!-- Navbar -->
     <header>
-        <h1>Arccio</h1>
-        <p>Demostración: Creamos páginas web para instituciones educativas</p>
+        <nav class="navbar">
+            <img src="assets/logo.png" alt="Logo Web Demostrativa" class="logo">
+            <ul>
+                <li><a href="#hero">Inicio</a></li>
+                <li><a href="#about">Sobre Nosotros</a></li>
+                <li><a href="#services">Servicios</a></li>
+                <li><a href="#testimonials">Testimonios</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <main>
-        <section>
-            <h2>Calcula tu inversión</h2>
-            <label for="budget">Presupuesto estimado:</label>
-            <input type="range" id="budget" min="500" max="5000" step="100">
-            <p id="budgetValue">$500</p>
-        </section>
+    <!-- Hero -->
+    <section id="hero">
+        <div class="hero-text">
+            <h1>Bienvenido a Nuestra Web</h1>
+            <p>Diseñamos soluciones modernas y efectivas para ti.</p>
+            <a href="#services" class="btn">Descubrir más</a>
+        </div>
+    </section>
 
-        <section>
-            <h2>Solicita una demostración</h2>
-            <form id="contactForm" method="POST" action="/api/contact">
-                <input type="text" name="name" placeholder="Nombre" required>
-                <input type="email" name="email" placeholder="Correo electrónico" required>
-                <textarea name="message" placeholder="Mensaje" required></textarea>
-                <label>
-                    <input type="checkbox" name="consent" required>
-                    Acepto la política de privacidad
-                </label>
-                <button type="submit">Enviar solicitud</button>
-            </form>
-        </section>
-    </main>
+    <!-- Casos de Éxito -->
+    <section id="success-cases" class="section">
+        <h2>Casos de Éxito</h2>
+        <div class="cases">
+            <div class="case">
+                <h3>Caso 1: Aumento de Ventas</h3>
+                <p>Implementamos una nueva estrategia de marketing digital que resultó en un aumento del 30% en las ventas en 6 meses.</p>
+            </div>
+            <div class="case">
+                <h3>Caso 2: Mejora de la Experiencia del Cliente</h3>
+                <p>Rediseñamos la página web y optimizamos el proceso de compra, lo que mejoró la satisfacción del cliente en un 25%.</p>
+            </div>
+        </div>
+    </section>
 
+    <!-- Sobre Nosotros -->
+    <section id="about" class="section">
+        <h2>Sobre Nosotros</h2>
+        <p>Somos un equipo apasionado que combina creatividad y tecnología para crear experiencias únicas en la web.</p>
+    </section>
+
+    <!-- Servicios -->
+    <section id="services" class="section">
+        <h2>Servicios</h2>
+        <div class="cards">
+            <div class="card">
+                <h3>Diseño Web</h3>
+                <p>Interfaces atractivas y funcionales.</p>
+            </div>
+            <div class="card">
+                <h3>Desarrollo</h3>
+                <p>Aplicaciones rápidas y seguras.</p>
+            </div>
+            <div class="card">
+                <h3>SEO</h3>
+                <p>Optimización para buscadores.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonios -->
+    <section id="testimonials" class="section">
+        <h2>Testimonios</h2>
+        <div class="testimonial">
+            <p>"Gracias a su trabajo, nuestra empresa creció un 200% en 6 meses."</p>
+            <span>- Cliente Satisfecho</span>
+        </div>
+    </section>
+
+    <!-- Preguntas Frecuentes (FAQ) -->
+    <section id="faq" class="section">
+        <h2>Preguntas Frecuentes</h2>
+        <div class="faq-item">
+            <h3>¿Cuánto tiempo tarda un proyecto?</h3>
+            <p>El tiempo de un proyecto depende de su complejidad, pero generalmente oscila entre 2 y 8 semanas.</p>
+        </div>
+        <div class="faq-item">
+            <h3>¿Qué tipo de soporte ofrecen?</h3>
+            <p>Ofrecemos soporte técnico y mantenimiento continuo para garantizar el correcto funcionamiento de su sitio web.</p>
+        </div>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contact" class="section">
+        <h2>Contacto</h2>
+        <form action="#" method="post">
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Nombre" required>
+            <label for="correo">Correo</label>
+            <input type="email" id="correo" name="correo" placeholder="Correo" required>
+            <label for="mensaje">Mensaje</label>
+            <textarea id="mensaje" name="mensaje" placeholder="Mensaje" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
     <footer>
-        <p>&copy; 2025 Arccio | <a href="privacy-policy.md">Política de Priva
+        <p>&copy; 2025 Web Demostrativa - Todos los derechos reservados</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body >
+</html >
